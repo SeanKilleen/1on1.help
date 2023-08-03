@@ -32,6 +32,9 @@
     <section class="hero is-link is-fullheight-with-navbar">
         <div class="hero-body">
             <div class="container has-text-centered">
+                <p class="subtitle" id="source">
+                    Consider asking...
+                </p>
                 <p class="title" id="question">
                     Question TBD
                 </p>
@@ -80,7 +83,7 @@
 
         var item = items[Math.floor(Math.random() * items.length)];
 
-        document.getElementById("question").innerHTML = item.question;
+        document.getElementById("question").innerHTML = "\"" + item.question + "\"";
 
         var sourceText = "";
         if (item.source != null) {
