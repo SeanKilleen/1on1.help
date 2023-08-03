@@ -34,11 +34,22 @@
 
     <section class="hero is-link is-fullheight-with-navbar">
         <div class="hero-body">
-            <p class="title">
-                Fullheight hero with navbar
+            <p class="title" id="question">
+                Question TBD
             </p>
+            <p class="subtitle" id="source">
+                Source TBD
+              </p>
         </div>
     </section>
+    <script>
+        var items = [{question: "Question", source: "Source"}];
+
+        var item = items[Math.floor(Math.random()*items.length)];
+
+        document.getElementById("question").innerHTML = item.question;
+        document.getElementById("source").innerHTML = "-- " + item.source;
+    </script>
 </body>
 
 </html>
