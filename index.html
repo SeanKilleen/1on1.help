@@ -54,7 +54,13 @@
         var item = items[Math.floor(Math.random() * items.length)];
 
         document.getElementById("question").innerHTML = item.question;
-        document.getElementById("source").innerHTML = "-- " + item.source;
+
+        var sourceText = "";
+        if (item.source != null) {
+            sourceText = "-- " + item.source;
+        }
+
+        document.getElementById("source").innerHTML = sourceText;
     </script>
 </body>
 
