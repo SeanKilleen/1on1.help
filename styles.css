@@ -1,3 +1,20 @@
+html,body {
+    height: 100%;
+}
+
+main {
+    display: flex;
+    height: 100%;
+
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main div {
+    text-align: center;
+    margin: auto;
+}
 
 /* #carbonads {
     bottom: 1rem;
