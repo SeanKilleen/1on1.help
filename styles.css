@@ -1,4 +1,31 @@
-#carbonads {
+html,body {
+    height: 100%;
+    font-family: Inter, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+main {
+    display: flex;
+    height: 100%;
+
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main div {
+    text-align: center;
+    margin: auto;
+}
+
+p#question {
+    font-size: xx-large;
+}
+
+p#source {
+    font-size: small;
+}
+
+/* #carbonads {
     bottom: 1rem;
     display: block;
     position: fixed;
@@ -63,4 +90,4 @@
     body .page-content {
         margin-right: 0;
     }
-}
+} */
