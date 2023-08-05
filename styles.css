@@ -17,6 +17,14 @@ main div {
     margin: auto;
 }
 
+p#question {
+    font-size: xx-large;
+}
+
+p#source {
+    font-size: small;
+}
+
 /* #carbonads {
     bottom: 1rem;
     display: block;
