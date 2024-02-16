@@ -28,7 +28,11 @@
             </div>
         </div>
     </main>
-    <footer></footer>
+    <footer>
+        <div>
+            <p>Hastily crafted with &hearts; by <a href="https://seankilleen.com">Sean Killeen</a>. <span id="questioncount">0</span> questions from <span id="sourcescount">0</span>+ sources, and counting.</p>
+        </div>
+    </footer>
 
     <!-- Carbon ads script -->
     <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CK7DLK7I&placement=seankilleencom"
@@ -163,7 +167,15 @@
             }
         }
 
+        const uniqueSources = items.reduce((acc, item) => {
+            if (item.source) {
+                acc.add(item.source);
+            }
+            return acc;
+        }, new Set());
         document.getElementById("source").innerHTML = sourceText;
+        document.getElementById("questioncount").innerHTML = items.length;
+        document.getElementById("sourcescount").innerHTML = uniqueSources.size;
     </script>
 </body>
 

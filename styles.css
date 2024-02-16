@@ -19,7 +19,7 @@ main {
     justify-content: center;
 }
 
-main div {
+main div, footer div {
     text-align: center;
     margin: auto;
 }
