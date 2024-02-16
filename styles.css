@@ -25,69 +25,15 @@ p#source {
     font-size: small;
 }
 
-/* #carbonads {
-    bottom: 1rem;
-    display: block;
-    position: fixed;
-    right: 1rem;
-    text-align: left;
-    width: 140px;
-    z-index: 100;
+#carbonads {
+    display: flex;
+    justify-content: center;
 }
 
-#carbonads a {
-    color: #fff;
+.carbon-wrap,.carbon-poweredby {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
-#carbonads a:hover {
-    color: #fff;
-}
-
-#carbonads span {
-    display: block;
-    overflow: hidden;
-}
-
-.carbon-img {
-    display: block;
-    line-height: 1;
-    margin: 0 auto 8px;
-}
-
-.carbon-text {
-    font-size: 12pt;
-    display: block;
-    margin-bottom: 8px;
-}
-
-.carbon-poweredby {
-    display: block;
-    font-size: 9px;
-    letter-spacing: 1px;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-@media only screen and (max-width: 1200px) {
-    #carbonads {
-        margin: auto auto auto 20px;
-        position: relative;
-        width: 100%;
-    }
-
-    #carbonads .carbon-img {
-        float: left;
-        margin-right: 10px;
-        vertical-align: middle;
-    }
-
-    #carbonads .carbon-text {
-        font-size: 12pt;
-        display: inline;
-        line-height: 8px;
-    }
-
-    body .page-content {
-        margin-right: 0;
-    }
-} */
