@@ -71,7 +71,13 @@
 
         var sourceText = "";
         if (item.source != null) {
-            sourceText = "-- " + item.source;
+            if(!URL.canParse(item.source)) {
+                console.log("CAN'T PARSE");
+                sourceText.innerHTML = "Source: " + item.source;
+            }else{
+                console.log("PARSED")
+                sourceText = "Source: <a href=\"" + item.source + "\">" + item.source + "</a>";
+            }
         }
 
         document.getElementById("source").innerHTML = sourceText;
